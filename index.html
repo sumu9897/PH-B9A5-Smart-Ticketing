@@ -164,7 +164,7 @@
                 </div>
             </section>
             </div>
-            <div class="">
+            <div class="border-l-2 pl-5 border-dashed">
                 <div>
                     <h2 class="text-2xl font-semibold text-secondary">Select Your Seat</h2>
                 </div>
@@ -209,16 +209,53 @@
 
                         <!-- Form Section -->
                         <div class="my-5">
-                            <label class="form-control w-full">
+                            <label class="form-control w-full my-3">
                                 <div class="label">
-                                    <span class="label-text font-bold text-base">Passenger name*</span>
+                                    <span class="label-text font-bold text-base">Passenger Name*</span>
 
                                 </div>
-                                <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-                                <div class="label">
-
-                                </div>
+                                <input type="text" placeholder="Enter Passenger Name" class="input input-bordered w-full" />
+                                
                             </label>
+
+                            <label class="form-control w-full my-3">
+                                <div class="label">
+                                    <span class="label-text font-bold text-base">Phone Number*</span>
+
+                                </div>
+                                <input type="number" placeholder="Enter Phone Number" class="input input-bordered w-full" />
+                                
+                            </label>
+                            <label class="form-control w-full my-3"></label>
+                                <div class="label">
+                                    <span class="label-text font-bold text-base">Email ID*</span>
+
+                                </div>
+                                <input type="text" placeholder="Enter Email Address" class="input input-bordered w-full" />
+                                
+                            </label>
+                            <button onclick="my_modal_1.showModal()" class="btn bg-primary mt-5 text-white uppercase w-full">Next</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                    <i class="fa-regular fa-circle-check text-6xl text-primary"></i>
+                                    <h3 class="font-bold text-2xl text-primary mt-5">Congratulation</h3>
+                                    <div class="text-center">
+                                        <p class="font-bold">
+                                            Thank you for booking our bus seats. We are working hard to find the best Service and deals for you.
+                                        </p>
+                                    </div>
+                                    <p class="my-2">
+                                        Shortly you will find a confirmation in your email
+                                    </p>
+                                    <button id="btn-continue" class="btn bg-primary px-16 btn-md hover:bg-black translate-colors ease-in duration-300 text-white border-none">
+                                        Continue
+                                    </button>
+                                </form>
+                            </dialog>
+                            <div class="flex justify-between mt-5">
+                                <a class="underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out" href="#">Terms and Conditions</a>
+                                <a class="underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out" href="#">Cancellation Policy</a>
+                            </div>
                         </div>
 
                     </div>
